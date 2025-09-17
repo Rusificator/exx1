@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    
+    <title>Задание 1</title>
+
+ <style>
+        
+        body {
+            font-family: Arial, sans-serif; 
+            max-width: 800px;               
+            margin: 0 auto;                 
+            padding: 20px;                  
+            line-height: 1.6;   
+                   
+        }
+
+        
+        ul {
+            background-color: #f9f9f9;    
+            
+        }
+        
+        form {
+            background-color: #f9f9f9;    
+            
+        }
+
+        li {
+            margin-bottom: 10px;        
+        }
+
+       
+
+       
+    </style>
+
+  </head>
+
+  <body>
+
+    
+ <h1 >Задание 1</h1>
+    
+
+    <h2>Маркированный список</h2>
+
+    <ul>
+      <li>1. <a href="http://kubsu.ru/">Абсолютная ссылка на kubsu.ru (HTTP)</a></li>
+    <li>2. <a href="https://kubsu.ru/">Абсолютная ссылка на kubsu.ru (HTTPS)</a></li>
+     <li>3. Ссылка-изображение: <a href="https://kubsu.ru/" ><img src="18-02-2017_27.jpg" alt="Логотип КубГУ" width="150"></a></li>
+
+            <li>4. <a href="internal-page.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+            <li>5. <a href="/">Сокращенная ссылка на главную страницу</a></li>
+
+            <li>6. <a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+            <li>7. <a href="https://www.kubsu.ru/ru/search?keys=образование&category=8&year=2023">Ссылка с тремя параметрами в URL</a></li>
+            <li>8. <a href="https://www.kubsu.ru/ru/node/38730?id=12345">Ссылка с параметром id в URL</a></li>
+
+            <li>9. <a href="current-page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+            <li>10. <a href="about/about-page.html">Относительная ссылка на страницу в каталоге about</a></li>
+            <li>11. <a href="LUP/LUP-page.html">Относительная ссылка на страницу уровнем выше</a></li>
+            <li>12. <a href="LUPUP/LUP/LUPUP.html">Относительная ссылка на страницу двумя уровнями выше</a></li>
+
+            <li>13. Контекстная ссылка: <p>Это абзац текста, в котором находится <a href="https://kubsu.ru">контекстная ссылка</a> на сайт КубГУ.</p></li>
+            <li>14. <a href="https://ru.wikipedia.org/wiki/HTML#Версии">Ссылка на фрагмент страницы стороннего сайта (Wikipedia - HTML)</a></li>
+            <li>16. <a href="">Ссылка с пустым href</a></li>
+            <li>17. <a>Ссылка без href</a></li>
+            <li>18. <a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+            <li>19. <a href="https://kubsu.ru" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
+           
+            <li>21. <a href="ftp://example.com/">Ссылка на файл на сервере FTP с авторизацией</a></li>
+
+
+
+    </ul>
+
+    
+        <h2>15. Ссылки из областей картинки </h2>
+        <p>Дерево - ссылка на английскую версию сайта КУБГУ</p>
+        <p>Надпись - ссылка на русскую версию сайта КУБГУ</p>
+            <img src="18-02-2017_27.jpg" alt="Пример изображения с областями" usemap="#examplemap" class="image-map">
+            <map name="examplemap">
+                <area shape="rect" coords="0,275,400,400" href="https://kubsu.ru" alt="Прямоугольная область" title="https://kubsu.ru">
+                <area shape="circle" coords="200,105,150" href="https://kubsu.ru/en" alt="Круглая область" title="https://kubsu.ru/en" >
+            </map>
+     
+
+    
+        <h2>20. Нумерованный список ссылок с подписями title</h2>
+        <ol>
+            <li><a href="https://kubsu.ru" title="Официальный сайт Кубанского государственного университета">Сайт КубГУ</a></li>
+            <li><a href="https://kubsu.ru/ru/university" title="Информация об университете">Об университете</a></li>
+            <li><a href="https://kubsu.ru/ru/education" title="Образовательные программы">Образование</a></li>
+            <li><a href="https://kubsu.ru/ru/science" title="Научная деятельность">Наука</a></li>
+            <li><a href="https://kubsu.ru/ru/abiturient" title="Информация для абитуриентов">Абитуриентам</a></li>
+        </ol>
+    
+
+     
+        <h2 id="fragment" >Фрагмент текущей страницы</h2>
+        <p>Это фрагмент страницы, на который ведет ссылка из первого раздела.(п.6)</p>
+    
+  
+    <h2>Форма</h2>
+<form>
+    <label>Имя: <input type="text" name="name"></label><br>
+    <label>Телефон: <input type="tel" name="phone"></label><br>
+    <label>Email: <input type="email" name="email"></label><br>
+    <label>Дата рождения: <input type="date" name="birthdate"></label><br>
+    
+    <span>Пол:</span>
+        <label><input type="radio" name="gender" value="male"> Мужской</label>
+        <label><input type="radio" name="gender" value="female"> Женский</label>
+    <br>
+
+    <label>Любимый язык программирования:
+        <select multiple name="languages">
+            <option value="pascal">Pascal</option>
+              <option value="Python">Python</option>
+                <option value="C++">C++</option>
+                  <option value="C">C</option>
+                    <option value="JavaScript">JavaScript</option>
+                      <option value="PHP">PHP</option>
+                        <option value="Java">Java</option>
+                         <option value="Haskel">Haskel</option>
+                           <option value="Clojure">Clojure</option>
+                            <option value="Prolog">Scala</option>
+        </select>
+    </label><br>
+
+    <label>Биография: <textarea name="bio"></textarea></label><br>
+    <label>С контрактом ознакомлен(a)<input type="checkbox" name="agreement"> </label><br>
+    <button type="submit">Сохранить</button>
+</form>
+  </body>
+
+</html>
